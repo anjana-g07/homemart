@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeMart - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">🏠 HomeMart</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html">🛒 Cart</a></li>
+            <li><a href="account.html">👤 Account</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contact-page">
+
+    <section class="contact-header">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you.</p>
+    </section>
+
+    <section class="contact-container">
+
+        <div class="contact-info">
+            <h2>Get In Touch</h2>
+
+            <p>📧 support@homemart.com</p>
+            <p>📞 +91 98765 43210</p>
+            <p>📍 Chennai, Tamil Nadu, India</p>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form id="contactForm">
+
+                <label>Name</label>
+                <input type="text" required>
+
+                <label>Email</label>
+                <input type="email" required>
+
+                <label>Message</label>
+                <textarea rows="6" required></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 HomeMart. All Rights Reserved.</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    alert("Thank you! Your message has been submitted.");
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>
